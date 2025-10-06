@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚠️ Alerta de Seguridad</title>
+    <link rel="stylesheet" href="Diseño/styles.css">
+</head>
+<body>
+    <canvas class="matrix-bg" id="matrix"></canvas>
+    
+    <div class="container">
+        <div class="warning-icon">⚠️</div>
+        <h1>ACCESO DETECTADO</h1>
+        
+        <div class="alert-box">
+            <p style="text-align: center; color: #ff0000; font-size: 1.2em; margin-bottom: 15px;">
+                <strong>¡ATENCIÓN! Hemos capturado tu información</strong>
+            </p>
+            <p style="text-align: center; color: #ffffff;">
+                Esto es lo que un atacante podría obtener si haces clic en un enlace malicioso:
+            </p>
+        </div>
+
+        <div id="data-container">
+            <div class="loading">⏳ Capturando información del dispositivo...</div>
+        </div>
+
+        <div class="map-container" id="map-section" style="display: none;">
+            <h3 style="color: #ffff00;">📍 Tu ubicación aproximada:</h3>
+            <div id="map"></div>
+        </div>
+
+        <div class="education-section">
+            <h2>🎓 CAMPAÑA EDUCATIVA CONTRA EL PHISHING</h2>
+            <p>
+                <strong>¡Tranquilo/a!</strong> Esta página es completamente segura y forma parte de una campaña educativa. 
+                No guardamos ni compartimos tu información. Solo queremos mostrarte lo vulnerable que puedes ser.
+            </p>
+            <p>
+                <strong>¿Qué es el Phishing?</strong> Es una técnica de ingeniería social donde los atacantes 
+                intentan engañarte para que proporciones información confidencial o hagas clic en enlaces maliciosos.
+            </p>
+            
+            <h3 style="color: #00ff00; margin-top: 20px;">✅ Consejos de Seguridad:</h3>
+            <ul class="tips-list">
+                <li>Nunca hagas clic en enlaces sospechosos de correos o mensajes desconocidos</li>
+                <li>Verifica siempre la URL antes de ingresar datos personales</li>
+                <li>No escanees códigos QR de fuentes no confiables</li>
+                <li>Usa autenticación de dos factores en todas tus cuentas</li>
+                <li>Mantén actualizado tu antivirus y sistema operativo</li>
+                <li>Desconfía de mensajes urgentes que te piden actuar rápidamente</li>
+                <li>Revisa los permisos que otorgas a las aplicaciones y sitios web</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>🔐 Campaña Educativa de Ciberseguridad 2025</p>
+            <p>Esta demostración no almacena ningún dato. Es solo con fines educativos.</p>
+        </div>
+    </div>
+
+    <script src="Funcion/script.js"></script>
+</body>
+</html>
